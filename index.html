@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jerome Foster II
+        </title>
+        <link rel="stylesheet" href="cool.js" type="text/css" />
+        <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <video id="video" loop="false" src="sky_boxes/wla_class_1.mp4">
+                    
+                <a-asset-item id="test-obj" src="city/scene.obj"></a-asset-item>
+                <a-asset-item id="test-mtl" src="city/scene.mtl"></a-asset-item>
+                
+                <a-asset-item id="storm-obj" src="soldier/hi.obj"></a-asset-item>
+                <a-asset-item id="storm-mtl" src="soldier/hi.mtl"></a-asset-item>
+                
+                <a-asset-item id="tank-obj" src="tank-1/vehicle.obj"></a-asset-item>
+                <a-asset-item id="tank-mtl" src="tank-1/vehicle.mtl"></a-asset-item>
+                
+                <a-asset-item id="creed-obj" src="creed/creed.obj"></a-asset-item>
+                <a-asset-item id="creed-mtl" src="creed/creed.mtl"></a-asset-item>
+            </a-assets>
+            
+             <!--R2-D2-->
+                  <a-entity obj-model="obj: #test-obj; mtl: #test-mtl" scale="1 1 1" position="0 -9 0" rotation="0 0 0" ></a-entity>
+             <!--Rs-D2-->
+             
+             <!--R2-D2-->
+             
+                 <a-entity obj-model="obj: #storm-obj; mtl: #storm-mtl" scale="1 1 1" position="-45 -2 0" rotation="0 90 0" >
+                  </a-entity>
+            <!--<a-sky src="1.jpg" position="0 -2000 0"></a-sky>-->
+            <a-sky color="lightblue"></a-sky>
+                  <a-entity obj-model="obj: #creed-obj; mtl: creed-mtl" scale=".05 .05 .05" position="-45 -2 0" rotation="0 90 0" >
+                  </a-entity>
+                  <a-entity obj-model="obj: #tank-obj; mtl: #tank-mtl" scale="1 1 1" position="-18 -2 29" rotation="0 45 0" >
+                  </a-entity>
+                  
+                  <a-entity obj-model="obj: #tank-obj; mtl: #tank-mtl" scale="1 1 1" position="-8 -2 33" rotation="0 90 0" >
+                  </a-entity>
+                  
+                  <a-entity obj-model="obj: #tank-obj; mtl: #tank-mtl" scale="1 1 1" position="3 -2 33" rotation="0 90 0" >
+                  </a-entity>
+             <!--Rs-D2-->
+        </a-scene>
+    </body>
+</html>
