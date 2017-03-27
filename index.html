@@ -10,7 +10,7 @@
     <body>
         <a-scene>
             <a-assets>
-                <video id="video" loop="false" src="sky_boxes/wla_class_1.mp4">
+                <video id="video" loop="false" src="sky_boxes/wla_class_1.mp4"/>
                     
                 <a-asset-item id="test-obj" src="city/scene.obj"></a-asset-item>
                 <a-asset-item id="test-mtl" src="city/scene.mtl"></a-asset-item>
@@ -45,6 +45,9 @@
                   
                   <a-entity obj-model="obj: #tank-obj; mtl: #tank-mtl" scale="1 1 1" position="3 -2 33" rotation="0 90 0" >
                   </a-entity>
+                  
+                  <a-entity camera look-controls wasd-controls position="0 5 30"></a-entity>
+                  
              <!--Rs-D2-->
         </a-scene>
     </body>
